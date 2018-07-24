@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+  {% include head.html %}
+
+  <body>
+
+    <div class="container">
+
+    <br>
+    <section class="main-content">
+    <a href="{{ site.github }}" 
+       target="_blank"
+       style="float:right; margin:5px; padding:10px; margin-right: 20px">
+       <i class="fa fa-github fa-2x"></i></a>
+
+    <a href="{{ site.baseurl }}/" 
+       style="float:right; margin:5px; padding:10px">
+       <i class="fa fa-home fa-2x"></i></a>
+
+    <a href="{{ site.baseurl }}/recipes" 
+       style="float:right; margin:5px; padding:10px">
+       <i class="fa fa-chevron-left fa-2x"></i></a>
+      <br><br><hr><br>
+      
+      {{ content }}
+
+      <br><br><br>
+      {% include page-footer.html %}
+
+    </section>
+    </div>
+
+  </body>
+</html>

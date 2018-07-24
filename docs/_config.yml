@@ -1,0 +1,47 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: Repo2Docker Containers
+description: "Library of Repo2Docker containers"
+baseurl: "/repo2docker-containers" #important: start with /
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: <!--more-->
+
+colors:  #in hex code if not noted else
+  primary: "#e32929"
+  primary_rgb: "247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#F7F7F7"
+  link: "#e32929"
+  link_hover: "#01b2fe"
+  footer_heading: "#777"
+  footer_content: "#bfc9d3"
+
+# Making projects separate from posts
+collections:
+  library:
+    output: true
+    permalink: /e/:title/
+  recipes:
+    output: true
+    permalink: /r/:title/
+    values:
+      layout: "recipe.html"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+github: https://www.github.com/vsoch"
+maintainer: "@vsoch"
+social:
+  - title: twitter
+    url: https://www.twitter.com/vsoch
