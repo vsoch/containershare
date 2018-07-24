@@ -1,5 +1,7 @@
 # Repo2Docker Container Library
 
+<img src="https://vsoch.github.io/lessons/assets/img/logo-book.png" width="100px">
+
 [![CircleCI](https://circleci.com/gh/vsoch/repo2docker-containers.svg?style=svg)](https://circleci.com/gh/vsoch/repo2docker-containers)
 
 This is the library of repo2docker experiment containers provided for use on the Sherlock cluster via the [forward](https://www.github.com/vsoch/forward) tool. See the README at the link for usage instructions for forward.
@@ -9,7 +11,6 @@ Example tutorials are provided for:
 
   - https://vsoch.github.io/lessons/sherlock-singularity/
   - https://vsoch.github.io/lessons/jupyter-tensorflow/
-
 
 # Usage
 
