@@ -6,12 +6,6 @@
 
 This is the library of repo2docker experiment containers provided for use on the Sherlock cluster via the [forward](https://www.github.com/vsoch/forward) tool. See the README at the link for usage instructions for forward.
 
-## Tutorials
-Example tutorials are provided for:
-
-  - https://vsoch.github.io/lessons/sherlock-singularity/
-  - https://vsoch.github.io/lessons/jupyter-tensorflow/
-
 # Usage
 
 ## Run a Container
@@ -35,3 +29,10 @@ To contribute a new container:
  4. Open a pull request to the master branch to add your contribution!
 
 When the pull request is merged, the container will be added to the table for others to use.
+
+# Tutorials
+Example tutorials are provided for:
+
+  - [Singularity on Sherlock](https://vsoch.github.io/lessons/sherlock-singularity/)
+  - [Tensorflow on Sherlock](https://vsoch.github.io/lessons/jupyter-tensorflow/)
+
