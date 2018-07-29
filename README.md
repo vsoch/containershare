@@ -38,7 +38,7 @@ If you have a general Docker container that is built from a Dockerfile in your r
 After doing the above, you will have a repository that is hooked up to continuous integration, and deploys to Docker Hub. The rest from here is easy! You just need to submit this repository. How do you do that?
 
  1. Fork this repository, pull your fork on your local machine, and create a new branch for your container.
- 2. Once the container is deployed on Docker Hub (step 1) add a markdown file to the [_containers](_containers) folder. 
+ 2. Once the container is deployed on Docker Hub (step 1) add a markdown file to the [_library](_library) folder. 
  3. Open a pull request to the master branch to add your contribution!
 
 When the pull request is merged, the container will be added to [the table](https://vsoch.github.io/containershare) and [library](https://vsoch.github.io/containershare/library.json) for others to use.

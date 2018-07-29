@@ -27,6 +27,8 @@
                     <td>
                         <a href="{{ exp.github }}" target="_blank">
                            <span class="btn btn-xs btn-info">GITHUB</span></a>
+                        <a href="{{ exp.web }}" target="_blank">
+                           <span class="btn btn-xs btn-info">WEB</span></a>
                     </td>
                     <td><a href="{{ exp.docker }}" target="_blank">{{ exp.name }}</a></td>
                     <td>{% for tag in exp.tags %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
