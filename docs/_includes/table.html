@@ -101,15 +101,12 @@
          $(".glyphicon").removeClass('glyphicon');
 
          // Load Selected
-         if (localStorage.getItem("expfactory-experiments") === null) {  
+         if (localStorage.getItem("expfactory-experiments") === null) {
              $("#message").text('0 containers selected')
-             $("#generateBtn").attr('disabled', true);
          } else if (localStorage.getItem("expfactory-experiments") === "") {
              $("#message").text('0 containers selected')
-             $("#generateBtn").attr('disabled', true)
          } else if (localStorage.getItem("expfactory-experiments") === "{}") {
              $("#message").text('0 containers selected')
-             $("#generateBtn").attr('disabled', true)
          } else {
  
              experiments = JSON.parse(localStorage.getItem('expfactory-experiments'));
@@ -117,7 +114,6 @@
              $("#message").text(length +' containers selected')
              $.each( experiments, function( name, github ) {
                $('[data-name="' + name + '"] :checkbox').attr('checked',true);
-             $("#generateBtn").attr('disabled', false)
 
            });
         }
@@ -127,11 +123,6 @@
 
             var experiments = new Object();
             var checked = $('.selected');
-            if (checked.length > 0) {
-               $("#generateBtn").attr('disabled', false)
-            } else {
-               $("#generateBtn").attr('disabled', true)
-            }
 
             $.each(checked, function(i,e){
                var row = $('tr[data-index="'+ $(this).attr('data-index') + '"]')
