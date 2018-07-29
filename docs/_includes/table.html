@@ -88,9 +88,8 @@
                 document.location = "{{ site.baseurl }}/library.json";
             });
 
-     
             $generateBtn.click(function () {
-                document.location = "{{ site.github.repo }}";
+                document.location = "{{ site.github.repository_url }}";
             });
                                      
             $(window).resize(function () {
