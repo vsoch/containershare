@@ -1,10 +1,16 @@
-# Repo2Docker Container Library
+# Containershare
 
 <img src="https://vsoch.github.io/lessons/assets/img/logo-book.png" width="100px">
 
-This is the library of containers provided for use locally or on the Sherlock cluster via the [forward](https://www.github.com/vsoch/forward) tool. See the README at the link for usage instructions for forward.
+This is an open source library of containers. You can come here for one of several use cases:
 
-# Usage
+ 1. You want to [browse available containers](https://vsoch.github.io/containershare) provided for use locally or on the Sherlock cluster via the [forward](https://www.github.com/vsoch/forward) tool.
+ 2. You want to [contribute a container](#contribute-a-container) to this registry, meaning that your code gets packaged in a reproducible way, deployed for sharing, and with exposure of metadata like packages and files.
+ 3. You want to deploy your own [open source registry](#deploy-a-registry) all with freely available, easy to use tools that you are already familiar with.
+
+Continue reading for details on the above, or [ask a question](https://www.github.com/vsoch/containershare/issues) if you need help.
+
+# Use Cases
 
 ## Run a Container
 
