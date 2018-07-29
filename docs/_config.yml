@@ -3,7 +3,7 @@
 # Site settings
 title: Repo2Docker Containers
 description: "Library of Repo2Docker containers"
-baseurl: "/repo2docker-containers" #important: start with /
+baseurl: "/containershare" #important: start with /
 url: ""
 
 # Build settings
@@ -40,7 +40,7 @@ defaults:
       layout: "page"
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
-github: https://www.github.com/vsoch"
+repo: https://www.github.com/vsoch"
 maintainer: "@vsoch"
 social:
   - title: twitter
