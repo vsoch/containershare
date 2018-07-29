@@ -40,7 +40,7 @@ defaults:
       layout: "page"
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
-repo: https://www.github.com/vsoch"
+repo: https://www.github.com/vsoch/containershare"
 maintainer: "@vsoch"
 social:
   - title: twitter
