@@ -10,16 +10,11 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: containershare-{{ .Branch }}-{{ checksum "docs/Gemfile" }}
-      - run:
-          name: Install Ruby dependencies
-          command: |
-            cd docs
-            bundle install --path=vendor/bundle --jobs=4 --retry=3
+          key: containershare-{{ .Branch }}
       - save_cache:
-          key: containershare-{{ .Branch }}-{{ checksum "docs/Gemfile" }}
+          key: containershare-{{ .Branch }}
           paths:
-            - "vendor/bundle"
+            - "docs"
       - run:
           name: Build the Jekyll site
           command: |
