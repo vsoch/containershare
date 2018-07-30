@@ -24,7 +24,7 @@ jobs:
           name: Build the Jekyll site
           command: |
             cd docs
-            bundle exec jekyll build
+            jekyll build
       - run:
           name: "Install Containershare"
           command: |
