@@ -19,6 +19,7 @@ jobs:
           name: Build the Jekyll site
           command: |
             cd docs
+            gem install jekyll
             jekyll build
       - run:
           name: "Install Containershare"
