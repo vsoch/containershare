@@ -26,13 +26,11 @@ jobs:
             cd docs
             bundle exec jekyll build
       - run:
-          name: "Install Expfactory"
+          name: "Install Containershare"
           command: |
             wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
             /bin/bash Miniconda3-latest-Linux-x86_64.sh -b 
-            cd /tmp && git clone https://github.com/expfactory/expfactory.git
-            cd /tmp/expfactory && $HOME/miniconda3/bin/python setup.py install
-            $HOME/miniconda3/bin/python -m pip install pyaml
+            $HOME/miniconda3/bin/python -m pip install pyaml containershare
             cd $HOME/containershare/docs
             $HOME/miniconda3/bin/python ../tests/circle_urls.py $HOME/containershare/docs/_site
       - run:
