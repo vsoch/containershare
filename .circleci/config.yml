@@ -3,21 +3,21 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.5.1
-    working_directory: ~/experiments
+    working_directory: ~/containershare
     environment:
       JEKYLL_ENV: production
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     steps:
       - checkout
       - restore_cache:
-          key: experiments-{{ .Branch }}-{{ checksum "docs/Gemfile" }}
+          key: containershare-{{ .Branch }}-{{ checksum "docs/Gemfile" }}
       - run:
           name: Install Ruby dependencies
           command: |
             cd docs
             bundle install --path=vendor/bundle --jobs=4 --retry=3
       - save_cache:
-          key: experiments-{{ .Branch }}-{{ checksum "docs/Gemfile" }}
+          key: containershare-{{ .Branch }}-{{ checksum "docs/Gemfile" }}
           paths:
             - "vendor/bundle"
       - run:
@@ -33,18 +33,18 @@ jobs:
             cd /tmp && git clone https://github.com/expfactory/expfactory.git
             cd /tmp/expfactory && $HOME/miniconda3/bin/python setup.py install
             $HOME/miniconda3/bin/python -m pip install pyaml
-            cd $HOME/experiments/docs
-            $HOME/miniconda3/bin/python ../tests/circle_urls.py $HOME/experiments/docs/_site
+            cd $HOME/containershare/docs
+            $HOME/miniconda3/bin/python ../tests/circle_urls.py $HOME/containershare/docs/_site
       - run:
-          name: "Test Expfactory Library"
+          name: "Test Containers Library"
           command: |
-            echo "The Experiment Factory!"
-            cd $HOME/experiments && $HOME/miniconda3/bin/python -m unittest tests.test_library
+            echo "Containershare!"
+            cd $HOME/containershare && $HOME/miniconda3/bin/python -m unittest tests.test_library
             echo "Previewing Library Metadata"
             cat docs/_site/library.json
       - store_artifacts: 
           path: docs/_site
-          destination: experiments
+          destination: containershare
 
 workflows:
   version: 2
