@@ -47,6 +47,7 @@ import sys
 from glob import glob
 
 import unittest
+import shutil
 
 VERSION = sys.version_info[0]
 here = os.getcwd()
