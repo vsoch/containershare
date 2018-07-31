@@ -46,7 +46,7 @@ import re
 import sys
 from glob import glob
 
-from unittest import TestCase
+import unittest
 
 VERSION = sys.version_info[0]
 here = os.getcwd()
