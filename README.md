@@ -16,7 +16,7 @@ Continue reading for details on the above, or [ask a question](https://www.githu
 
 You can browse available containers [here](https://vsoch.github.io/containershare). You can use a container is several ways!
 
- 1. Follow [instructions](https://www.github.com/vsoch/forward) to configure the forward tool. There are also good instructions available in tutorials linked from that repository.
+ 1. Follow [instructions](https://www.github.com/vsoch/forward) to configure the forward tool. There are also good instructions available in tutorials linked from that repository. Containers in the containershare library that are "forward friendly," meaning you are intended to use ssh forwarding from your local machine to interact with a web based notebook, are tagged with `forward`.
  2. Find a container you like, and pull directly with Docker or [Singularity](https://singularityware.github.io) for a shared HPC resource.
  3. Use the `containershare` library (under development) that will allow you to search container metadata and inspected content.
 
