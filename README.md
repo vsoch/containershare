@@ -30,7 +30,7 @@ Do you have a jupyter (or similar) notebook and want to quickly build and deploy
 
 ### General Docker
 If you have a general Docker container that is built from a Dockerfile in your repository, check out the
-[share-docker template](#) (available soon!)
+[share-docker template](https://github.com/vsoch/share-docker).
 
 
 ### Step 2. Submit Metadata
