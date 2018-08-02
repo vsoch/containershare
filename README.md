@@ -32,7 +32,7 @@ Do you have a jupyter (or similar) notebook and want to quickly build and deploy
 If you have a general Docker container that is built from a Dockerfile in your repository, check out the
 [share-docker template](https://www.github.com/vsoch/share-docker). As an example, this template is used to build [share-jupyter](https://www.github.com/vsoch/share-jupyter).
 
-Do you have another container template you'd like? [Let me know](https://www.github.com/vsoch/containershare/issues)!
+Do you have another container template you'd like? [Let me know](https://www.github.com/vsoch/containershare/issues)! Another good way to start is to [browse the table](https://vsoch.github.io/containershare), find a container like yours, and then copy the circle configuration.
 
 ### Step 2. Submit Metadata
 
