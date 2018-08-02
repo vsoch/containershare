@@ -8,6 +8,7 @@ This is an open source library of containers. You can come here for one of sever
  2. You want to [contribute a container](#contribute-a-container) to this registry, meaning that your code gets packaged in a reproducible way, deployed for sharing, and with exposure of metadata like packages and files.
  3. You want to deploy your own [open source registry](#deploy-a-registry) all with freely available, easy to use tools that you are already familiar with.
 
+Read about the development and [use cases here](https://vsoch.github.io/2018/build-deploy-docs/), and expect for a JOSS paper to be submit with the following DOI soon.
 [![DOI](https://zenodo.org/badge/142066803.svg)](https://zenodo.org/badge/latestdoi/142066803)
 
 Continue reading for details on the above, or [ask a question](https://www.github.com/vsoch/containershare/issues) if you need help.
