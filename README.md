@@ -50,3 +50,60 @@ When the pull request is merged, the container will be added to [the table](http
 
 ## Deploy a Registry
 If you want to deploy your own containershare, it's just a matter of forking this repository, and turning on Github pages to deploy from the docs folder, and then connecting the repository to circleci. Once this is done, third parties (others) should be able to equivalently submit pull requests to your registry that are tested, and upon merge, the container contribution added to the table, and the container available for discovery via the API exposed by the registry.
+
+### Local Tests
+The testing step of the registry that occurs on CircleCI is optimized to only test newly added files (so previous additions do not need to be tested and take, however the testing can be run locally (and manually) if desired. The general steps would be to do the following:
+
+ - build the site locally with jekyll
+ - inspect the image manifest
+ - for each new container represented as a markdown file in the library, check that it serves metadata
+
+#### Step 1. Build the Jekyll Site
+You can [install jekyll](https://jekyllrb.com/docs/installation/) for your platform of interest], and build the site after
+cloning the repository:
+
+```bash
+git clone https://www.github.com/vsoch/containershare
+cd containershare/docs
+jekyll build
+```
+
+This will generate static content for the site (including the library.json API file) in the `_site` folder.
+Check it out!
+
+```bash
+cat _site/library.json
+```
+
+#### Step 2. Install Containershare
+Containershare has a small [python library](https://pypi.org/project/containershare/) that is used to run the tests,
+and this is done to ensure versioning of the testing itself. You can install this library (check the `.circleci/config.yml`
+for the updated version, at the time of this writing the current version is 0.0.14) and then use it to run tests on the static
+generated content.
+
+```bash
+pip install pyaml containershare==0.0.14
+```
+
+It's assumed that you have some flavor of python installed, along with the package manager pip. To
+use the exact version that the CircleCI is using, these are the steps to install:
+
+```bash
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+/bin/bash Miniconda3-latest-Linux-x86_64.sh -b 
+$HOME/miniconda3/bin/python -m pip install pyaml containershare==0.0.14
+```
+
+#### Step 3. Test the library
+The final command will run the tests! If you are in the "docs" folder, go up one level back
+to the base of the repository ("tests" should be in the present working directory). Note that in the CircleCI
+continuous integration, the tests are run like this:
+
+```bash
+python -m unittest tests.test_library
+```
+
+The above command will run through the library, and for each entry, clone the Github repository
+Github pages and master branches, and check for all metadata files (tags.json, inspections and image manifests) along with "human friendly" metadata like a LICENSE and README. Finally, the tests ensure
+that the Github Pages (or other preview link) is deployed based on a 200 status return, and that
+the name does not include any invalid characters (outside of numbers, letters, `-` `_` and `/`).

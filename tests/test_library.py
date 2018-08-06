@@ -59,6 +59,7 @@ class TestSubmission(unittest.TestCase):
     def setUp(self):
         self.tmpdir = tempfile.mkdtemp()
         self.LibValidator = LibraryValidator()
+        self.RuntimeValidator = RuntimeValidator()
 
     def tearDown(self):
         shutil.rmtree(self.tmpdir)
