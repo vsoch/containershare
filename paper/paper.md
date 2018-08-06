@@ -24,6 +24,9 @@ Containershare is an open source library of containers, both providing itself as
 
 ![https://vsoch.github.io/assets/images/posts/containershare/table.png](https://vsoch.github.io/assets/images/posts/containershare/table.png)
 
+While several frameworks exist with a primary goal to provide a listing of container builds (e.g., biocontainers [@Da_Veiga_Leprevost2017-xx]) containershare is unique in its requirement for each container to serve more substantial metadata. For example, while biocontainers also takes advantage of services like Docker Hub to provision a build, it doesn't go out of its way to provide any more metadata than a standard image manifest. The manifests themselves and the container listings are not served using a distributed strategy. While biocontainers shines and succeeds to provide a listing of containers, it's prime purpose is to provide a simple listing of bioinformatics containers, and not to empower other users to deploy similar initatives branded for their containers. Whereas the containershare Github repository works as an API, biocontainers does not appear to have any metadata served from the respository directly. Further, containershare takes a distributed strategy of serving metadata from each included repository allowing for individual containers to have unique and distinct tests, if wanted.
+
+
 ## Container Repository Templates
 
 The individual container repository is responsible for serving its own metadata that the containershare can discover, validate, and provide for the user. It is also driven by a simple definition of a general CircleCI workflow, including building of a container, extraction of metadata, and then deployment of the container to Docker Hub and metadata files and user interface back to Github Pages. The workflow definitions to accomplish this are provided by containershare, and include:
