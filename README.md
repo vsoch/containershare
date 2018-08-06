@@ -31,6 +31,9 @@ To contribute a new container, first decide what kind of container you want to b
 ### Repo2Docker
 Do you have a jupyter (or similar) notebook and want to quickly build and deploy it? You will want to use the [repo2docker share](https://github.com/vsoch/repo2docker-share) template. This is based on the [continuous builder](https://github.com/vsoch/continuous-build).
 
+### Repo2Docker Julia
+This is a complete example of a Julia+Jupyter notebook, built with repo2docker for you to use! The [repo2docker-julia](https://github.com/vsoch/repo2docker-julia) template drives this with a simple `environment.yml` file for Python dependencies, and `REQUIRE` file for Julia.
+
 ### General Docker
 If you have a general Docker container that is built from a Dockerfile in your repository, check out the
 [share-docker template](https://www.github.com/vsoch/share-docker). As an example, this template is used to build [share-jupyter](https://www.github.com/vsoch/share-jupyter).
