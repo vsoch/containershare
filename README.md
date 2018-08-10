@@ -54,7 +54,19 @@ When the pull request is merged, the container will be added to [the table](http
 
 
 ## Deploy a Registry
-If you want to deploy your own containershare, it's just a matter of forking this repository, and turning on Github pages to deploy from the docs folder, and then connecting the repository to circleci. Once this is done, third parties (others) should be able to equivalently submit pull requests to your registry that are tested, and upon merge, the container contribution added to the table, and the container available for discovery via the API exposed by the registry.
+
+If you want to deploy your own containershare, there are two components that you can do.
+
+ 1. Is the web interface here
+ 2. Is a folder of shared containers on your research cluster that corresponds to them.
+
+### 1. Deploy the Container Share Interface
+You may just be interested in having the online library of tested containers, and so you would want to start here! For the interface, it's just a matter of forking this repository, and turning on Github pages to deploy from the docs folder, and then connecting the repository to circleci. Once this is done, third parties (others) should be able to equivalently submit pull requests to your registry that are tested, and upon merge, the container contribution added to the table, and the container available for discovery via the API exposed by the registry.
+
+### 2. Deploy a containershare on your cluster
+If you use the [forward tool](https://www.github.com/vsoch/forward) there is a script that will allow users to easily access a shared folder of containers that you provide. That's right... the container share! See the script [create.py](scripts) 
+and the associated README to pull the containers. Then check out the forward tool's `sherlock/containershare-jupyter.sbatch`
+(and similar) scripts for your users to use your containers!
 
 ### Local Tests
 The testing step of the registry that occurs on CircleCI is optimized to only test newly added files (so previous additions do not need to be tested and take, however the testing can be run locally (and manually) if desired. The general steps would be to do the following:
