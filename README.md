@@ -56,8 +56,6 @@ If you use R, this container comes with R, RStudio, and an example of Shiny! The
 
 ```bash
 docker run --rm -it -p 8888:8888 vanessa/repo2docker-r jupyter notebook --ip 0.0.0.0
-
-# coming soon, instructions for shiny and rstudio
 ```
 
 ### Repo2Docker Conda
