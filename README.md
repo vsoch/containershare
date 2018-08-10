@@ -5,7 +5,7 @@
 This is an open source library of containers. You can come here for one of several use cases:
 
  1. You want to [use a container](#use-a-container) that is available from the [browsable library](https://vsoch.github.io/containershare) provided by the registry. You can use the container locally, or as a suggestion for a shared resource that requires a graphical forward, you can use the [forward](https://www.github.com/vsoch/forward) tool.
- 2. You want to [contribute a container](#contribute-a-container) to this registry, meaning that your code gets packaged in a reproducible way, deployed for sharing, and with exposure of metadata like packages and files.
+ 2. You want to contribute or use a [containershare template](#containershare-templates). Contributing means that your code gets packaged in a reproducible way, deployed for sharing, and with exposure of metadata like packages and files.
  3. You want to deploy your own [open source containershare](#deploy-a-containershare) all with freely available, easy to use tools that you are already familiar with.
 
 Read about the development and [use cases here](https://vsoch.github.io/2018/build-deploy-docs/), and please reference the software if it is useful to you:
@@ -14,7 +14,7 @@ Read about the development and [use cases here](https://vsoch.github.io/2018/bui
 [![DOI](https://zenodo.org/badge/142066803.svg)](https://zenodo.org/badge/latestdoi/142066803)
 
 Continue reading for details on the above, or [ask a question](https://www.github.com/vsoch/containershare/issues) if you need help.
-Or jump down to one of our [templates](#contribute-a-container):
+Or jump down to one of our [templates](#containershare-templates):
 
 # Container Repository Templates
 Here are some helpful templates to get you started! Detailed instructions and usage can be found in their respective repositories.
@@ -38,7 +38,7 @@ You can browse available containers [here](https://vsoch.github.io/containershar
  2. Find a container you like, and pull directly with Docker or [Singularity](https://singularityware.github.io) for a shared HPC resource.
  3. Use the `containershare` library (under development) that will allow you to search container metadata and inspected content.
 
-## Contribute a Container
+## Containershare Templates
 
 ### Step 1. What kind of container?
 To contribute a new container, first decide what kind of container you want to build. We have getting started guides and templates for multiple kinds, along with examples for you to quickly demo them. For all of the containers below, we name them `repo2docker` 
