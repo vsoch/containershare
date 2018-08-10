@@ -1,5 +1,7 @@
 # Helpers
 
+**Note** that the create.py will be replaced with a better solution, this was a quick script that @vsoch threw together!
+
 # Create.py
 
 [create.py](create.py) is a helper script that can help you to create a container share on
