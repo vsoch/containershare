@@ -110,6 +110,8 @@ If you use the [forward tool](https://www.github.com/vsoch/forward) there is a s
 and the associated README to pull the containers. Then check out the forward tool's `sherlock/containershare-jupyter.sbatch`
 (and similar) scripts for your users to use your containers!
 
+**Note** that the create.py will be replaced with a better solution, this was a quick script that @vsoch threw together!
+
 ### Local Tests
 The testing step of the registry that occurs on CircleCI is optimized to only test newly added files (so previous additions do not need to be tested and take, however the testing can be run locally (and manually) if desired. The general steps would be to do the following:
 
