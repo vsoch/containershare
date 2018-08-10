@@ -41,9 +41,8 @@ You can browse available containers [here](https://vsoch.github.io/containershar
 ## Containershare Templates
 
 ### Step 1. What kind of container?
-To contribute a new container, first decide what kind of container you want to build. We have getting started guides and templates for multiple kinds, along with examples for you to quickly demo them. For all of the containers below, we name them `repo2docker` 
-and use the same port (`8888`) so be sure to change this if you want to run multiple at the same time. Or just kill the running container and do a la carte.
 
+Whether you want to contribute or use a container, the first step is to decide what kind of container you want. Below we have getting started guides and templates for multiple kinds, along with examples for you to quickly demo them. For all of the containers below, we name them `repo2docker` and use the same port (`8888`) so be sure to change this if you want to run multiple at the same time. Or just kill the running container and do a la carte.
 
 ### Repo2Docker
 Do you have a jupyter (or similar) notebook and want to quickly build and deploy it? You will want to use the [repo2docker share](https://github.com/vsoch/repo2docker-share) template. This is based on the [continuous builder](https://github.com/vsoch/continuous-build).
@@ -82,7 +81,8 @@ If you have a general Docker container that is built from a Dockerfile in your r
 docker run --rm -it -p 8888:8888 vanessa/repo2docker-share jupyter notebook --ip 0.0.0.0
 ```
 
-Do you have another container template you'd like? [Let me know](https://www.github.com/vsoch/containershare/issues)! Another good way to start is to [browse the table](https://vsoch.github.io/containershare), find a container like yours, and then copy the circle configuration.
+Do you have another container template you'd like? [Let me know](https://www.github.com/vsoch/containershare/issues)! Another good way to start is to [browse the table](https://vsoch.github.io/containershare), find a container like yours, and then copy the circle configuration. If you are using the container, you can stop here. If you want to contribute a container template (perhaps starting from
+one of these bases) keep reading to learn how to set up the continuous build to generate the Docker image and metadata on Github Pages.
 
 ### Step 2. Submit Metadata
 
