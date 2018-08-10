@@ -95,7 +95,7 @@ After doing the above, you will have a repository that is hooked up to continuou
 When the pull request is merged, the container will be added to [the table](https://vsoch.github.io/containershare) and [library](https://vsoch.github.io/containershare/library.json) for others to use.
 
 
-## Deploy a Registry
+## Deploy a Containershare
 
 If you want to deploy your own containershare, there are two components that you can do.
 
