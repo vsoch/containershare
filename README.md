@@ -14,6 +14,18 @@ Read about the development and [use cases here](https://vsoch.github.io/2018/bui
 [![DOI](https://zenodo.org/badge/142066803.svg)](https://zenodo.org/badge/latestdoi/142066803)
 
 Continue reading for details on the above, or [ask a question](https://www.github.com/vsoch/containershare/issues) if you need help.
+Or jump down to one of our [templates](#contribute-a-container):
+
+# Templates:
+
+ - [Repo2Docker](#repo2docker): A vanilla starter jupyter notebook. With pokemon. Highly recommended.
+ - [Repo2Docker-r](#repo2docker-r): A notebook with R, Rstudio, and a shiny example.
+ - [Repo2Docker-conda](#repo2docker-conda): If you like snakes and notebooks, this Miniconda starter is for you!
+ - [Repo2Docker-Julia](#repo2docker-julia): a notebook with the julia programming language.
+ - [General Docker](#general-docker): You can build just a Dockerfile too.
+
+For all of the above, jump down to the links to try out examples! If you have a request for a new template, please [ask](https://www.github.com/vsoch/containershare/issues).
+
 
 # Use Cases
 
@@ -28,17 +40,46 @@ You can browse available containers [here](https://vsoch.github.io/containershar
 ## Contribute a Container
 
 ### Step 1. What kind of container?
-To contribute a new container, first decide what kind of container you want to build. We have getting started guides and templates for multiple kinds!
+To contribute a new container, first decide what kind of container you want to build. We have getting started guides and templates for multiple kinds, along with examples for you to quickly demo them. For all of the containers below, we name them `repo2docker` 
+and use the same port (`8888`) so be sure to change this if you want to run multiple at the same time. Or just kill the running container and do a la carte.
+
 
 ### Repo2Docker
 Do you have a jupyter (or similar) notebook and want to quickly build and deploy it? You will want to use the [repo2docker share](https://github.com/vsoch/repo2docker-share) template. This is based on the [continuous builder](https://github.com/vsoch/continuous-build).
 
+```bash
+docker run --rm -it -p 8888:8888 vanessa/repo2docker-share jupyter notebook --ip 0.0.0.0
+```
+
+### Repo2Docker R
+If you use R, this container comes with R, RStudio, and an example of Shiny! The [repo2docker-r](https://github.com/vsoch/repo2docker-r) template will allow you to add a `runtime.txt` file, a notebook file, along with an `install.R` file to build the perfect container.
+
+```bash
+docker run --rm -it -p 8888:8888 vanessa/repo2docker-r jupyter notebook --ip 0.0.0.0
+```
+
+### Repo2Docker Conda
+Want to deploy a container with your favorite conda installs? This template will make it easy to install miniconda, and then run your notebook with dependencies ready to go! Want to get started? Check out the [repo2docker-conda](https://github.com/vsoch/repo2docker-conda) template.
+
+```bash
+docker run --rm -it -p 8888:8888 vanessa/repo2docker-conda jupyter notebook --ip 0.0.0.0
+```
+
 ### Repo2Docker Julia
 This is a complete example of a Julia+Jupyter notebook, built with repo2docker for you to use! The [repo2docker-julia](https://github.com/vsoch/repo2docker-julia) template drives this with a simple `environment.yml` file for Python dependencies, and `REQUIRE` file for Julia.
+Another template for jupyter (that doesn't use repo2docker) is the [julia-share](https://github.com/vsoch/julia-share)
+
+```bash
+docker run --rm -it -p 8888:8888 vanessa/repo2docker-julia jupyter notebook --ip 0.0.0.0
+```
 
 ### General Docker
 If you have a general Docker container that is built from a Dockerfile in your repository, check out the
-[share-docker template](https://www.github.com/vsoch/share-docker). As an example, this template is used to build [share-jupyter](https://www.github.com/vsoch/share-jupyter).
+[share-docker template](https://www.github.com/vsoch/share-docker).
+
+```bash
+docker run --rm -it -p 8888:8888 vanessa/repo2docker-share jupyter notebook --ip 0.0.0.0
+```
 
 Do you have another container template you'd like? [Let me know](https://www.github.com/vsoch/containershare/issues)! Another good way to start is to [browse the table](https://vsoch.github.io/containershare), find a container like yours, and then copy the circle configuration.
 
