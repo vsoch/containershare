@@ -7,6 +7,7 @@ docker: "https://hub.docker.com/r/vanessa/repo2docker-julia"
 web: "https://vsoch.github.io/repo2docker-julia"
 uid: "repo2docker-julia"
 tags:
+- template
 - repo2docker
 - julia
 - jupyter

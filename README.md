@@ -17,6 +17,7 @@ Continue reading for details on the above, or [ask a question](https://www.githu
 Or jump down to one of our [templates](#contribute-a-container):
 
 # Container Repository Templates
+Here are some helpful templates to get you started! Detailed instructions and usage can be found in their respective repositories.
 
  - [Repo2Docker](#repo2docker): A vanilla starter jupyter notebook. With pokemon. Highly recommended.
  - [Repo2Docker-r](#repo2docker-r): A notebook with R, Rstudio, and a shiny example.

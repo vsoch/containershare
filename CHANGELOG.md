@@ -14,6 +14,7 @@ represented. Critical items to know are:
 
 
 ## [master](https://github.com/vsoch/containershare/tree/master) (master)
+ - templates for conda and r have been added, along with "templates" tag (8-10-2018)
  - added scripts/create.py to create a containershare folder from the library.json (8-09-2018)
  - this CHANGELOG
 
