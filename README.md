@@ -16,7 +16,7 @@ Read about the development and [use cases here](https://vsoch.github.io/2018/bui
 Continue reading for details on the above, or [ask a question](https://www.github.com/vsoch/containershare/issues) if you need help.
 Or jump down to one of our [templates](#contribute-a-container):
 
-# Templates:
+# Container Repository Templates
 
  - [Repo2Docker](#repo2docker): A vanilla starter jupyter notebook. With pokemon. Highly recommended.
  - [Repo2Docker-r](#repo2docker-r): A notebook with R, Rstudio, and a shiny example.
