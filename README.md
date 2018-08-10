@@ -17,12 +17,12 @@ Continue reading for details on the above, or [ask a question](https://www.githu
 Or jump down to one of our [templates](#containershare-templates):
 
 # Container Repository Templates
-Here are some helpful templates to get you started! Detailed instructions and usage can be found in their respective repositories.
+Here are some [helpful templates](#containershare-templates) to get you started! Detailed instructions and usage can be found in their respective repositories.
 
- - [Repo2Docker](#repo2docker): A vanilla starter jupyter notebook. With pokemon. Highly recommended.
- - [Repo2Docker-r](#repo2docker-r): A notebook with R, Rstudio, and a shiny example.
- - [Repo2Docker-conda](#repo2docker-conda): If you like snakes and notebooks, this Miniconda starter is for you!
- - [Repo2Docker-Julia](#repo2docker-julia): a notebook with the julia programming language.
+ - [repo2docker](#repo2docker): A vanilla starter jupyter notebook. With pokemon. Highly recommended.
+ - [repo2docker-r](#repo2docker-r): A notebook with R, Rstudio, and a shiny example.
+ - [repo2docker-conda](#repo2docker-conda): If you like snakes and notebooks, this Miniconda starter is for you!
+ - [repo2docker-julia](#repo2docker-julia): a notebook with the julia programming language.
  - [General Docker](#general-docker): You can build just a Dockerfile too.
 
 For all of the above, jump down to the links to try out examples! If you have a request for a new template, please [ask](https://www.github.com/vsoch/containershare/issues).
