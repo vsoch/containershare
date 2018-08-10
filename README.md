@@ -6,7 +6,7 @@ This is an open source library of containers. You can come here for one of sever
 
  1. You want to [use a container](#use-a-container) that is available from the [browsable library](https://vsoch.github.io/containershare) provided by the registry. You can use the container locally, or as a suggestion for a shared resource that requires a graphical forward, you can use the [forward](https://www.github.com/vsoch/forward) tool.
  2. You want to [contribute a container](#contribute-a-container) to this registry, meaning that your code gets packaged in a reproducible way, deployed for sharing, and with exposure of metadata like packages and files.
- 3. You want to deploy your own [open source registry](#deploy-a-registry) all with freely available, easy to use tools that you are already familiar with.
+ 3. You want to deploy your own [open source containershare](#deploy-a-containershare) all with freely available, easy to use tools that you are already familiar with.
 
 Read about the development and [use cases here](https://vsoch.github.io/2018/build-deploy-docs/), and please reference the software if it is useful to you:
 
