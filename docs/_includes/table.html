@@ -27,10 +27,12 @@
                     <td>
                         <a href="{{ exp.github }}" target="_blank">
                            <span class="btn btn-xs btn-info">GITHUB</span></a>
+                        <a href="{{ exp.docker }}" target="_blank">
+                           <span class="btn btn-xs btn-info">DOCKER</span></a>
                         <a href="{{ exp.web }}" target="_blank">
                            <span class="btn btn-xs btn-info">WEB</span></a>
                     </td>
-                    <td><a href="{{ exp.docker }}" target="_blank">{{ exp.name }}</a></td>
+                    <td><a href="{{ exp.web }}" target="_blank">{{ exp.name }}</a></td>
                     <td>{% for tag in exp.tags %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</td>
                     <td>{{ exp.maintainer }}</td>
                 </tr>
@@ -135,7 +137,7 @@
             console.log(experiments);
             localStorage.setItem('expfactory-experiments',JSON.stringify(experiments))
              var length = Object.keys(experiments).length;
-             $("#message").text(length +' experiments selected')
+             $("#message").text(length +' containers selected')
 
         });
 

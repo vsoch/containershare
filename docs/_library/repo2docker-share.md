@@ -7,6 +7,7 @@ docker: "https://hub.docker.com/r/vanessa/repo2docker-share"
 web: "https://vsoch.github.io/repo2docker-share"
 uid: "repo2docker-share"
 tags:
+- template
 - repo2docker
 - forward
 - pokemon
