@@ -34,7 +34,7 @@ For all of the above, jump down to the links to try out examples! If you have a 
 
 You can browse available containers [here](https://vsoch.github.io/containershare). You can use a container is several ways!
 
- 1. Follow [instructions](https://www.github.com/vsoch/forward) to configure the forward tool. There are also good instructions available in tutorials linked from that repository.
+ 1. Follow [instructions](https://www.github.com/vsoch/forward) to configure the forward tool. There are also good instructions available in tutorials linked from that repository. Containers in the containershare library that are "forward friendly," meaning you are intended to use ssh forwarding from your local machine to interact with a web based notebook, are tagged with `forward`.
  2. Find a container you like, and pull directly with Docker or [Singularity](https://singularityware.github.io) for a shared HPC resource.
  3. Use the `containershare` library (under development) that will allow you to search container metadata and inspected content.
 
@@ -75,7 +75,7 @@ docker run --rm -it -p 8888:8888 vanessa/repo2docker-julia jupyter notebook --ip
 
 ### General Docker
 If you have a general Docker container that is built from a Dockerfile in your repository, check out the
-[share-docker template](https://www.github.com/vsoch/share-docker).
+[docker-share template](https://github.com/vsoch/docker-share).
 
 ```bash
 docker run --rm -it -p 8888:8888 vanessa/repo2docker-share jupyter notebook --ip 0.0.0.0
